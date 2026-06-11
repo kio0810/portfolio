@@ -1,40 +1,7 @@
 const categories = [
   {
-    title: 'Languages',
-    subtitle: '~/lang',
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <polyline points="16 18 22 12 16 6" />
-        <polyline points="8 6 2 12 8 18" />
-      </svg>
-    ),
-    items: ['Kotlin', 'Java', 'Go', 'Python', 'TypeScript'],
-  },
-  {
-    title: 'Frameworks',
-    subtitle: '~/framework',
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z" />
-      </svg>
-    ),
-    items: ['Spring Boot', 'Spring Cloud', 'JPA / QueryDSL', 'gRPC', 'Ktor'],
-  },
-  {
-    title: 'Databases',
-    subtitle: '~/data',
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <ellipse cx="12" cy="5" rx="9" ry="3" />
-        <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5" />
-        <path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6" />
-      </svg>
-    ),
-    items: ['PostgreSQL', 'MySQL', 'Redis', 'MongoDB', 'Elasticsearch'],
-  },
-  {
-    title: 'Infra & DevOps',
-    subtitle: '~/infra',
+    title: 'Backend',
+    subtitle: '~/backend',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="2" width="20" height="8" rx="2" />
@@ -43,27 +10,52 @@ const categories = [
         <line x1="6" y1="18" x2="6.01" y2="18" />
       </svg>
     ),
-    items: ['AWS', 'Kubernetes', 'Docker', 'Terraform', 'GitHub Actions'],
+    items: ['Java', 'Spring Framework', 'Spring Boot', 'eGovFrame', 'JSP', 'REST API'],
   },
   {
-    title: 'Messaging',
-    subtitle: '~/queue',
+    title: 'Frontend',
+    subtitle: '~/frontend',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M4 7h16M4 12h16M4 17h10" />
+        <rect x="2" y="3" width="20" height="14" rx="2" />
+        <line x1="8" y1="21" x2="16" y2="21" />
+        <line x1="12" y1="17" x2="12" y2="21" />
       </svg>
     ),
-    items: ['Apache Kafka', 'RabbitMQ', 'AWS SQS', 'Redis Streams'],
+    items: ['React', 'JavaScript', 'jQuery', 'HTML5', 'CSS3', 'WebSquare', 'Nexacro'],
   },
   {
-    title: 'Observability',
-    subtitle: '~/monitoring',
+    title: 'Database',
+    subtitle: '~/database',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 12h4l3-8 4 16 3-8h4" />
+        <ellipse cx="12" cy="5" rx="9" ry="3" />
+        <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+        <path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6" />
       </svg>
     ),
-    items: ['Grafana', 'Prometheus', 'Loki', 'Datadog', 'OpenTelemetry'],
+    items: ['MariaDB', 'Tibero', 'Oracle', 'MySQL', 'MSSQL'],
+  },
+  {
+    title: 'Persistence',
+    subtitle: '~/persistence',
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+      </svg>
+    ),
+    items: ['MyBatis', 'JPA', 'QueryDSL'],
+  },
+  {
+    title: 'Tools',
+    subtitle: '~/tools',
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+      </svg>
+    ),
+    items: ['Git', 'SVN'],
   },
 ];
 

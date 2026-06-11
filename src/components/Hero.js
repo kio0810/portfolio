@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 
 const roles = [
-  'Backend Engineer',
-  'Distributed Systems',
-  'API Architect',
-  'Cloud Native Developer',
+  'Full-Stack Developer',
+  'Java Backend Engineer',
+  'React Frontend Engineer',
+  'Batch System Developer',
 ];
 
 function useTypewriter(words, typeSpeed = 90, pause = 1600) {
@@ -58,9 +58,20 @@ export default function Hero() {
           </p>
 
           <p className="hero__desc">
-            대규모 트래픽을 견디는 안정적인 서버 아키텍처를 설계합니다.
-            Spring과 Kotlin을 주로 사용하며, 분산 시스템과 성능 최적화에
-            깊은 관심을 가지고 있습니다.
+            백엔드와 프론트엔드 영역을 모두 경험하며 서비스 개발 전반을
+            이해하고 있는 개발자입니다.
+          </p>
+          <p className="hero__desc">
+            Java 기반의 서버 개발과 React 기반의 웹 애플리케이션 개발을
+            수행해 왔으며, API 설계, 데이터베이스 연동, 화면 구현 및
+            운영 환경 대응까지 다양한 프로젝트 경험을 보유하고 있습니다.
+          </p>
+          <p className="hero__desc">
+            특히 백엔드와 프론트엔드를 분리한 구조에서 협업 및 개발을
+            진행하며 시스템 간 연계와 데이터 흐름을 고려한 개발 역량을
+            쌓아왔습니다. 안정성과 유지보수성을 우선으로 하며, 비즈니스
+            요구사항을 기술적으로 구현하는 과정에서 가치를 만들어내는
+            개발자가 되고자 합니다.
           </p>
 
           <div className="hero__actions">
@@ -76,16 +87,16 @@ export default function Hero() {
           </div>
 
           <div className="hero__socials">
-            <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <a href="https://github.com/kio0810" target="_blank" rel="noreferrer" aria-label="GitHub">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.94 10.94 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.66.41.36.78 1.05.78 2.12v3.14c0 .31.21.68.8.56C20.21 21.4 23.5 17.09 23.5 12 23.5 5.65 18.35.5 12 .5z" />
               </svg>
             </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            {/* <a href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.86-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.86 3.36-1.86 3.6 0 4.27 2.37 4.27 5.45v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45C23.21 24 24 23.22 24 22.27V1.73C24 .77 23.21 0 22.22 0z" />
               </svg>
-            </a>
+            </a> */}
             <a href="mailto:gearpoint12@gmail.com" aria-label="Email">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="3" y="5" width="18" height="14" rx="2" />
@@ -111,25 +122,25 @@ export default function Hero() {
               <span className="t-key">"name"</span><span className="t-punct">:</span> <span className="t-str">"Kim Eunjung"</span><span className="t-punct">,</span>
             </span>
             <span className="terminal__line">{'  '}
-              <span className="t-key">"role"</span><span className="t-punct">:</span> <span className="t-str">"Backend Engineer"</span><span className="t-punct">,</span>
+              <span className="t-key">"role"</span><span className="t-punct">:</span> <span className="t-str">"Full-Stack Developer"</span><span className="t-punct">,</span>
             </span>
             <span className="terminal__line">{'  '}
-              <span className="t-key">"location"</span><span className="t-punct">:</span> <span className="t-str">"Seoul, KR"</span><span className="t-punct">,</span>
+              <span className="t-key">"location"</span><span className="t-punct">:</span> <span className="t-str">"Jeonju, KR"</span><span className="t-punct">,</span>
             </span>
             <span className="terminal__line">{'  '}
-              <span className="t-key">"focus"</span><span className="t-punct">:</span> <span className="t-punct">[</span><span className="t-str">"Scalability"</span><span className="t-punct">,</span> <span className="t-str">"DX"</span><span className="t-punct">],</span>
+              <span className="t-key">"focus"</span><span className="t-punct">:</span> <span className="t-punct">[</span><span className="t-str">"Stability"</span><span className="t-punct">,</span> <span className="t-str">"Maintainability"</span><span className="t-punct">],</span>
             </span>
             <span className="terminal__line">{'  '}
               <span className="t-key">"stack"</span><span className="t-punct">:</span> <span className="t-punct">{'{'}</span>
             </span>
             <span className="terminal__line">{'    '}
-              <span className="t-key">"lang"</span><span className="t-punct">:</span> <span className="t-str">"Kotlin / Java / Go"</span><span className="t-punct">,</span>
+              <span className="t-key">"lang"</span><span className="t-punct">:</span> <span className="t-str">"Java / JavaScript"</span><span className="t-punct">,</span>
             </span>
             <span className="terminal__line">{'    '}
-              <span className="t-key">"db"</span><span className="t-punct">:</span> <span className="t-str">"PostgreSQL, Redis"</span><span className="t-punct">,</span>
+              <span className="t-key">"db"</span><span className="t-punct">:</span> <span className="t-str">"Tibero, Oracle, MySQL, MariaDB, MSSQL"</span><span className="t-punct">,</span>
             </span>
             <span className="terminal__line">{'    '}
-              <span className="t-key">"infra"</span><span className="t-punct">:</span> <span className="t-str">"AWS, Kubernetes"</span>
+              <span className="t-key">"framework"</span><span className="t-punct">:</span> <span className="t-str">"Spring, eGovFrame, React"</span>
             </span>
             <span className="terminal__line">{'  '}
               <span className="t-punct">{'}'}</span><span className="t-punct">,</span>

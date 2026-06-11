@@ -1,8 +1,20 @@
+const CAREER_START = new Date(2021, 7, 17); // 2021-08-17
+
+function careerYears() {
+  const now = new Date();
+  let years = now.getFullYear() - CAREER_START.getFullYear();
+  const beforeAnniversary =
+    now.getMonth() < CAREER_START.getMonth() ||
+    (now.getMonth() === CAREER_START.getMonth() && now.getDate() < CAREER_START.getDate());
+  if (beforeAnniversary) years -= 1;
+  return Math.max(years, 0);
+}
+
 const stats = [
-  { value: '5+', label: 'Years of Experience' },
-  { value: '30+', label: 'Production Services' },
-  { value: '10M+', label: 'Daily API Requests' },
-  { value: '99.95%', label: 'Service Uptime' },
+  { value: `${careerYears()}+`, label: '년 경력' },
+  { value: '8+', label: '참여 프로젝트' },
+  { value: 'Java', label: 'Backend' },
+  { value: 'React', label: 'Frontend' },
 ];
 
 export default function About() {
@@ -10,23 +22,22 @@ export default function About() {
     <section id="about">
       <div className="container">
         <span className="section-eyebrow">01. about me</span>
-        <h2 className="section-title">서버 너머의 사용자를 생각하는 개발자</h2>
+        <h2 className="section-title">서비스 전체를 이해하는 풀스택 개발자</h2>
 
         <div className="about__grid">
           <div className="about__text">
             <p>
-              저는 <strong>안정성과 확장성</strong>을 최우선으로 두는 백엔드 개발자입니다.
-              스타트업에서 모놀리식을 마이크로서비스로 분해하고, 일평균 트래픽을
-              <strong> 10배 이상</strong> 확장한 경험이 있습니다.
+              백엔드와 프론트엔드를 모두 경험하며 <strong>서비스 전체를 이해하는</strong> 개발자입니다.
             </p>
             <p>
-              단순히 동작하는 코드보다는, <strong>5년 뒤에도 유지보수 가능한 코드</strong>를
-              지향합니다. 도메인 주도 설계와 클린 아키텍처를 통해 비즈니스 로직과
-              인프라를 명확하게 분리하는 것을 좋아합니다.
+              Java를 기반으로 서버 개발을 수행해 왔으며, React를 활용한 프론트엔드 개발 경험도
+              보유하고 있습니다. 단순한 기능 구현보다 <strong>안정성, 확장성, 유지보수성</strong>을
+              고려한 개발을 지향하며, 문제의 원인을 파악하고 해결하는 과정에서 가장 큰 보람을 느낍니다.
             </p>
             <p>
-              최근에는 <strong>이벤트 드리븐 아키텍처</strong>와 Kafka 기반의 데이터 파이프라인,
-              그리고 Kubernetes 운영 자동화에 깊이 빠져있습니다.
+              새로운 기술을 배우는 것을 즐기며, 변화하는 기술 환경 속에서 꾸준히 성장하는
+              개발자가 되기 위해 노력하고 있습니다. 현재는 <strong>AI, 자동화, SaaS</strong> 서비스
+              개발에도 관심을 가지고 개인 프로젝트를 진행하고 있습니다.
             </p>
           </div>
 

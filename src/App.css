@@ -75,7 +75,6 @@ section {
   font-size: 16px;
   line-height: 1.7;
   margin: 0 0 48px;
-  max-width: 640px;
 }
 
 /* ==========================================================
@@ -310,8 +309,11 @@ section {
   color: var(--text-muted);
   font-size: 17px;
   line-height: 1.75;
-  margin: 0 0 32px;
+  margin: 0 0 14px;
   max-width: 540px;
+}
+.hero__desc:last-of-type {
+  margin-bottom: 32px;
 }
 
 .hero__actions {
@@ -605,7 +607,7 @@ section {
 .project-card__head {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 14px;
   margin-bottom: 18px;
 }
 .project-card__folder {
@@ -616,59 +618,59 @@ section {
   place-items: center;
   background: color-mix(in srgb, var(--accent-2) 14%, transparent);
   color: var(--accent-2);
+  flex-shrink: 0;
 }
 
-.project-card__links {
-  display: flex;
-  gap: 10px;
-  color: var(--text-muted);
+.project-card__title-wrap {
+  flex: 1;
+  min-width: 0;
 }
-.project-card__links a {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  display: grid;
-  place-items: center;
-  transition: color var(--transition), background-color var(--transition);
-}
-.project-card__links a:hover {
-  color: var(--accent);
-  background: var(--surface-2);
-}
-
 .project-card__title {
   font-size: 18px;
   font-weight: 700;
-  margin: 0 0 10px;
+  margin: 0;
+  letter-spacing: -0.01em;
 }
-.project-card__desc {
-  color: var(--text-muted);
-  font-size: 14.5px;
-  line-height: 1.7;
-  margin: 0 0 18px;
-  flex: 1;
+.project-card__period {
+  margin-top: 4px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: 0.02em;
 }
 
-.project-card__metrics {
-  display: flex;
-  gap: 16px;
+.project-card__group {
   margin-bottom: 18px;
-  padding: 12px 14px;
-  background: var(--surface-2);
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border);
 }
-.metric__value {
-  font-family: var(--font-mono);
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--accent);
-}
-.metric__label {
-  display: block;
-  margin-top: 2px;
-  font-size: 11px;
+.project-card__group-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 600;
   color: var(--text-muted);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.project-card__group-title::before {
+  content: '';
+  width: 14px;
+  height: 1px;
+  background: var(--accent);
+}
+.project-card__list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+.project-card__list li {
+  margin-bottom: 2px;
+}
+.project-card__list li::marker {
+  color: var(--accent);
 }
 
 /* ==========================================================

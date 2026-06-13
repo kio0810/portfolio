@@ -9,14 +9,14 @@ export default function Fun() {
     <section id="fun" className="fun reveal is-visible">
       <div className="container">
         <span className="section-eyebrow">05. fun</span>
-        <h1 className="section-title">AI로 만든 실험들</h1>
+        <h1 className="section-title">AI랑 같이 즐기는 것들</h1>
         <p className="section-desc">
-          "이런것도 되나?" 싶은 것들을 AI와 함께 만들어 보는 공간입니다.
-          앞으로 하나씩 채워나갈 예정이에요.
+          그냥 만들고 싶어서 만든 것들을 모아두는 공간이에요.
+          하나씩 채워나갈 예정이에요.
         </p>
 
         <div className="fun__placeholder">
-          <p>곧 첫 번째 실험이 추가됩니다.</p>
+          <p>곧 첫 번째 콘텐츠가 추가됩니다.</p>
         </div>
       </div>
     </section>

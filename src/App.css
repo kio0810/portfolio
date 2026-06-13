@@ -786,6 +786,25 @@ section {
 }
 
 /* ==========================================================
+   Fun page
+   ========================================================== */
+.fun {
+  min-height: calc(100vh - 64px);
+}
+
+.fun__placeholder {
+  margin-top: 24px;
+  padding: 64px 32px;
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--bg-elev) 60%, transparent);
+  text-align: center;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+
+/* ==========================================================
    Fade-in
    ========================================================== */
 .reveal {
